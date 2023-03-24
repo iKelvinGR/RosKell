@@ -1,0 +1,174 @@
+
+.contenedorVideos{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:30px 0;
+    height: auto;
+}
+
+.punto{
+    color: white;
+}
+.punto1{
+    color: red;
+}
+
+
+
+.Videos{
+    background: #0D0D0D;
+}
+
+.tituloSeccion{
+    font-size: 42px;
+    color: red;
+}
+
+
+.subtitulo{
+    color: white;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+
+.videosGS{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cajaVideo{
+    width: 30%;
+    padding: 0 0 30px 0;
+    overflow: hidden;
+    background: #161515;
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px red;
+}
+
+
+.videoDrive{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /*border-radius: 10px 0 0 10px;*/
+}
+
+
+.cajaTextoVideo{
+    text-align: left;
+    width: 90%;
+    margin:0 auto;
+}
+
+.cajaTitulo{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.cajaDescripcion{
+    color: white;
+    margin-bottom: 16px;
+}
+
+.botonVideo{
+    display: block;
+    background: linear-gradient(180deg, #ed1c24 0%, #ed1c24 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+
+
+
+
+
+@media screen and (max-width:900px){
+
+
+    .videosGS{
+        justify-content: space-evenly;
+    }
+
+    .Videos .cajaVideo{
+        width: 45%;
+    }
+
+    .cajaVideo{
+        width: 42%;
+    }
+
+    
+}
+
+@media screen and (max-width:700px){
+    main .container,
+    footer .contenedorVideos{
+        padding: 60px 0;
+    }
+
+
+
+
+    .tituloSeccion{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .subtitulo{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .services .cajaVideo{
+        width: 80%;
+    }
+
+    
+
+    .cajaVideo{
+        margin-bottom: 40px;
+        width: 65%;
+    }
+
+    .cajaTitulo{
+        font-size: 35px;
+    }
+
+    .botonVideo{
+        width: 100%;
+    }
+
+    
+
+    .item__contact{
+        width: 100%;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    
+
+    .Videos .cajaVideo{
+        width: 95%;
+    }
+
+    .cajaVideo{
+        width: 95%;
+    }
+
+    
+}

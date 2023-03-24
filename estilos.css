@@ -1,0 +1,44 @@
+.contenedor{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corazon{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px red;
+    animation: corazon 0.6s linear infinite;
+}
+.corazon::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    top: -50%;
+    border-radius: 50px;
+}
+.corazon::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px red;
+}
+@keyframes corazon{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1.00);
+    }
+}
